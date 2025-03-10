@@ -12,7 +12,7 @@ class BankAccount {
     }
 
     public void deposit(double amount) {
-        this.balance += amount; // Adding amount to the balance
+        this.balance += amount; 
     }
 
     public void withdraw(double amount) {
@@ -23,7 +23,6 @@ class BankAccount {
         }
     }
 
-    // Method to display account details
     public void display() {
         System.out.println("\n===== Account Details =====");
         System.out.println("Account Holder: " + accountHolder);
@@ -32,7 +31,6 @@ class BankAccount {
     }
 }
 
-// Main class to simulate ATM transactions
 public class ATM {
     public static void main(String[] args) {
         BankAccount a1 = new BankAccount("kriti", 101, 6000);
@@ -41,21 +39,17 @@ public class ATM {
         a1.display();
 
         a1.deposit(6000);
-        a1.display(); // Display updated balance
+        a1.display();
 
-        // Withdrawing money from a1's account
         a1.withdraw(5000);
-        a1.display(); // Display updated balance
+        a1.display();
 
-        // Display initial details for a2
         a2.display();
 
-        // Withdrawing full balance from a2's account
         a2.withdraw(5000);
-        a2.display(); // Display updated balance
+        a2.display(); 
 
-        // Depositing a large amount into a2's account
         a2.deposit(327948);
-        a2.display(); // Display updated balance
+        a2.display(); 
     }
 }

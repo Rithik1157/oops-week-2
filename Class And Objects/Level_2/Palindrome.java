@@ -1,6 +1,4 @@
 package Level_2;
-
-// PalindromeChecker class to check if a string is a palindrome
 class PalindromeChecker {
     private String text;
 
@@ -16,7 +14,7 @@ class PalindromeChecker {
 
         while (left < right) {
             if (text.charAt(left) != text.charAt(right)) {
-                return false; // Not a palindrome
+                return false; 
             }
             left++;
             right--;
@@ -37,12 +35,10 @@ class PalindromeChecker {
 // Main class to execute the program
 public class Palindrome {
     public static void main(String[] args) {
-        // Predefined test cases
         PalindromeChecker checker1 = new PalindromeChecker("kumar");
         PalindromeChecker checker2 = new PalindromeChecker("Rithik");
         PalindromeChecker checker3 = new PalindromeChecker("Hello");
 
-        // Displaying results
         checker1.displayResult();
         checker2.displayResult();
         checker3.displayResult();

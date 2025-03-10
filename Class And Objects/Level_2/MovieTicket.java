@@ -1,21 +1,17 @@
 package Level_2;
-
-// Movie class to store ticket details and perform booking
 class Movie {
     private String movieName;
     private String seatNumber;
     private double price;
     private boolean isBooked;
 
-    // Constructor to initialize ticket details
     public Movie(String movieName, String seatNumber, double price) {
         this.movieName = movieName;
         this.seatNumber = seatNumber;
         this.price = price;
-        this.isBooked = false; // Initially, the seat is not booked
+        this.isBooked = false; 
     }
 
-    // Method to book a ticket
     public void bookTicket() {
         if (!isBooked) {
             isBooked = true;
@@ -26,7 +22,6 @@ class Movie {
         }
     }
 
-    // Method to display ticket details
     public void displayTicketDetails() {
         System.out.println("Ticket Details");
         System.out.println("Movie: " + movieName);
@@ -36,10 +31,8 @@ class Movie {
     }
 }
 
-// Main class to execute the ticket booking system
 public class MovieTicket {
     public static void main(String[] args) {
-        // Predefined ticket details
         Movie ticket1 = new Movie("avengers", "12", 250.0);
         Movie ticket2 = new Movie("martian", "13", 300.0);
 
